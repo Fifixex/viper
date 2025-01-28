@@ -22,7 +22,7 @@
 ## ⚙️ Installation
 
 > [!IMPORTANT]
-> Please note that it is necessary to install the libgtk-4-dev package for successful compilation.
+> Please note that it is necessary to install the `libgtk-4-dev` package for successful compilation.
 > For more information about GTK-4, visit its documentation. [here](https://gtk-rs.org/gtk4-rs/stable/latest/docs/gtk4/).
 
 To install, execute the following commands:
