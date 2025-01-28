@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file.
 
 - *(ci)* Refactor profiler job indentation in CI workflow
 
+### 🚜 Refactor
+
+- *(ci)* Add Flatpak build job and update dependencies installation
+
 ### 📚 Documentation
 
 - Add changelog and configuration for git-cliff
