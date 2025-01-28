@@ -3,5 +3,34 @@ name = "viper"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+profiler = ["dep:pprof", "dep:rand", "profiler-flamegraph"]
+profiler-flamegraph = ["pprof/flamegraph"]
+
 [dependencies]
 gtk = { version = "0.9.2", package = "gtk4", features = ["v4_12"] }
+pprof = { version = "0.14", optional = true }
+rand = { version = "0.8.4", optional = true }
+tracing = "0.1.41"
+
+[profile.dev]
+opt-level = 0
+debug = true
+panic = "abort"
+
+[profile.test]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+panic = "unwind"
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.bench]
+opt-level = 3
+debug = true # used by the profiler
+strip = false # keep symbols for the profiler
