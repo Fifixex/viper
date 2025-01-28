@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 ### 📚 Documentation
 
 - Add changelog and configuration for git-cliff
+- Create README.md
 
 ### 🎨 Styling
 
