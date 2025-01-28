@@ -12,14 +12,27 @@ permissions:
   pull-requests: write
 
 jobs:
+  flatpak:
+    name: Flatpak builder
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-nightly
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v4
+    - uses: flatpak/flatpak-github-actions/flatpak-builder@v6.3
+      with:
+        bundle: viper.flatpak
+        manifest-path: org.viper.terminal.dev.yml
+        cache-key: flatpak-builder-${{ github.sha }}
   check:
     name: Check
     runs-on: ubuntu-22.04
     steps:
-      - name: install additional linux dependencies
+      - name: Install additional linux dependencies
         run: |
           sudo apt update -y
-          sudo apt install -y build-essential libgtk-4-dev libgtk-3-dev pkg-config libpango1.0-dev libxkbcommon-dev libxkbcommon-x11-dev libglib2.0-dev libgraphene-1.0-dev
+          sudo apt install -y build-essential libgtk-4-dev
       - name: Install toolchain
         uses: dtolnay/rust-toolchain@stable
       - name: Checkout
