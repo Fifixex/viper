@@ -91,7 +91,7 @@ jobs:
         with:
           command: test
           args: --doc
-profiler:
+  profiler:
     name: Run profiler
     runs-on: ubuntu-22.04
     steps:
