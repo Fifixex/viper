@@ -19,7 +19,7 @@ jobs:
       - name: install additional linux dependencies
         run: |
           sudo apt update
-          sudo apt install libpango1.0-dev libxkbcommon-dev libxkbcommon-x11-dev libgtk-4-dev libglib2.0-dev
+          sudo apt install pkg-config libpango1.0-dev libxkbcommon-dev libxkbcommon-x11-dev libgtk-4-dev libglib2.0-dev libgraphene-1.0-dev
       - name: Install toolchain
         uses: dtolnay/rust-toolchain@stable
       - name: Checkout
