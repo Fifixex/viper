@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Add changelog and configuration for git-cliff
 - Create README.md
 - Update README.md
+- *(license)* Create MIT LICENSE
 
 ### 🎨 Styling
 
