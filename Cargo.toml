@@ -8,10 +8,16 @@ profiler = ["dep:pprof", "dep:rand", "profiler-flamegraph"]
 profiler-flamegraph = ["pprof/flamegraph"]
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
 gtk = { version = "0.9.2", package = "gtk4", features = ["v4_12"] }
 pprof = { version = "0.14", optional = true }
 rand = { version = "0.8.4", optional = true }
 tracing = "0.1.41"
+
+[dependencies.adw]
+package = "libadwaita"
+version = "0.7.1"
+features = ["v1_5"]
 
 [profile.dev]
 opt-level = 0
