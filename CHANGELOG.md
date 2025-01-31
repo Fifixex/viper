@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### 🚀 Features
 
 - Implement initial application structure with GTK integration
+- Integrate libadwaita refactor application structure
 
 ### 🐛 Bug Fixes
 
