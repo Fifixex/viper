@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
 - Update README.md
 - *(license)* Create MIT LICENSE
 - Create CONTRIBUTING.md
+- *(README)* Add image preview
 
 ### 🎨 Styling
 
