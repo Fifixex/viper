@@ -19,6 +19,8 @@
   
 ---
 
+[![][image-preview]][viper-link]
+
 ## ⚙️ Installation
 
 > [!IMPORTANT]
@@ -53,3 +55,5 @@ Contributions to Viper are greatly appreciated! If you're interested in contribu
 | <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H</kbd> | Move between grouped windows backward |
 | <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | Move between grouped windows forward |
 
+[image-preview]: https://github.com/user-attachments/assets/b7597228-cf68-4cf3-96ea-1fd8135024bc
+[viper-link]: https://github.com/Fifixex/viper
