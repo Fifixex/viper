@@ -1,3 +1,7 @@
-* {
+body {
     background-color: blue;
+}
+
+.main-box {
+    background-color: blueviolet;
 }

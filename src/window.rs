@@ -2,7 +2,6 @@ use adw::ApplicationWindow;
 use gtk::gdk::Display;
 use gtk::glib::object::IsA;
 
-// use super::application::Application;
 use super::css;
 
 pub struct WindowBuilder {
