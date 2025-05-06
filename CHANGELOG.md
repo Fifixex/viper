@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 ### 🐛 Bug Fixes
 
 - *(ci)* Refactor profiler job indentation in CI workflow
+- Remove unused import module
 
 ### 🚜 Refactor
 
